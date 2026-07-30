@@ -4,31 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Norwegian Poem Generator</title>
   </head>
   <body>
     <div class="container">
       <header>
         <h1>AI Norwegian Poem Generator</h1>
-        <main>
-          <form>
-            <input
-              type="text"
-              placeholder="Enter the topic of the Norwegian poem"
-              autofocus
-              required
-              autocomplete="off"
-              class="instructions"
-            />
-            <input type="submit" class="submit-button" />
-          </form>
-          <div class="poem-output"></div>
-        </main>
-        <p>
-          This AI project generates a Norwegian poem based on your input. It
-          uses the OpenAI API to generate the poem.
-        </p>
       </header>
+
+      <main>
+        <form id="poem-generator-form">
+          <input
+            type="text"
+            placeholder="Enter the topic of the Norwegian poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="poem" id="poem"></div>
+      </main>
+
       <footer>
         <p>
           This AI project was created by
