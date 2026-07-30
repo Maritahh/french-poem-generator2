@@ -4,10 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <title>Norwegian Poem Generator</title>
+    <title>AI Norwegian Poem Generator</title>
   </head>
   <body>
-    <h1>AI Norwegian Poem Generator</h1>
+    <header>
+      <h1>AI Norwegian Poem Generator</h1>
+      <main>
+        <form id="poem-form">
+          <label for="input-text">Enter a topic or theme:</label>
+          <input
+            type="text"
+            id="input-text"
+            name="input-text"
+            autofocus
+            required
+            autocomplete="off"
+          />
+          <button type="submit">Generate Poem</button>
+        </form>
+        <div id="poem-output"></div>
+      </main>
+      <p>
+        This AI project generates a Norwegian poem based on your input. It uses
+        the OpenAI API to generate the poem.
+      </p>
+    </header>
     <footer>
       <p>
         This AI project was created by
