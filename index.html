@@ -11,23 +11,26 @@
   <body>
     <div class="container">
       <header>
-        <h1>AI Norwegian Poem Generator</h1>
+        <h1>AI Norsk diktgenerator</h1>
       </header>
 
       <main>
-        <form id="poem-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the topic of the Norwegian poem"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="poem" id="poem"></div>
+        <div class="form-container">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="Skriv inn et tema til diktet ditt"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">f.eks: Blomst, fjorder eller kjærlighet</div>
+        </div>
+        <div class="poem hidden blink" id="poem"></div>
       </main>
 
       <footer>
